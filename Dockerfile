@@ -1,8 +1,8 @@
 FROM golang:1.27-alpine AS builder
 
 WORKDIR /piss
-COPY go.mod go.sum ./
-#COPY go.mod ./
+#COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 COPY . .
 RUN go build -o main .
