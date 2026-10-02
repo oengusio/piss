@@ -43,13 +43,13 @@ func main() {
 	handler = logRequestHandler(handler)
 
 	server := &http.Server{
-		Addr:         ":9000",
+		Addr:         ":9001",
 		ReadTimeout:  120 * time.Second,
 		WriteTimeout: 120 * time.Second,
 		IdleTimeout:  120 * time.Second, // introduced in Go 1.8
 		Handler:      handler,
 	}
 
-	log.Println("Listening to port 9000")
+	log.Println("Listening to port 9001")
 	log.Fatal(server.ListenAndServe())
 }

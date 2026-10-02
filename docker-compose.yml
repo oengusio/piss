@@ -1,0 +1,10 @@
+services:
+  piss:
+    container_name: oengus-piss
+    build:
+      context: .
+    ports:
+      - "9001:9001"
+    network_mode: "bridge"
+    environment:
+      - NONE=nice
