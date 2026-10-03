@@ -1,2 +1,2 @@
 # piss
-Pixel Image Scaled Service? idk man, I just wanted to name a project piss
+Now with fluid scaling for making a big splash.
